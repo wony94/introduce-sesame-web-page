@@ -1,22 +1,31 @@
 <!doctype html>
 <html>
 <head>
-<title>Sesame</title>
-<meta charset="utf-8">
+    <title>Sesame</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 
 <body>
+    <input type="button" value="night" onclick="
+    nightDayHandler(this);   
+   ">
     <h1>참깨소개서</h1>
-    <ol>
-        <li><a href="index.html">참깨의 습관</a></li>
-        <li><a href="1.html">참깨의 언어</a></li>
-        <li><a href="2.html">참깨 발바닥 관리 방법</a></li>
-    </ol>
-    <h2>참깨의 언어</h2>
-    <h5><a href="https://instagram.com/sesame_200906?igshid=YmMyMTA2M2Y=" target="_blank" title="sesame instagram">참깨인스타 바로가기</a></h5>
-    <img src="sesame2.jpg" width="350">
-    <p>참깨는 평소에는 거의 짖지 않는다. 밖에서 다른 강아지가 짖는 소리가 들리거나 사람소리가 들려도 신경도 안쓴다. <br>
-    하지만 유독 말이 많아질 때가 있는데 그건 바로 <u>배가 고플 때</u> 이다. <br>간식줄까? 라고 물어보면 하울링을 하는데 <strong>마침 배고팠으니 얼른 줘라</strong> 라는 의미이다.</p>
-
+    <div id="grid">
+        <ol>
+            <li><a href="index.html" class="saw">참깨의 습관</a></li>
+            <li><a href="1.html" class="saw" id="active">참깨의 언어</a></li>
+            <li><a href="2.html">참깨 발바닥 관리 방법</a></li>
+        </ol>
+        <div id="article">
+            <h2>참깨의 언어</h2>
+            <h5><a href="https://instagram.com/sesame_200906?igshid=YmMyMTA2M2Y=" target="_blank" title="sesame instagram">참깨인스타 바로가기</a></h5>
+            <img src="sesame2.jpg" width="350">
+            <p>참깨는 평소에는 거의 짖지 않는다. 밖에서 다른 강아지가 짖는 소리가 들리거나 사람소리가 들려도 신경도 안쓴다. <br>
+            하지만 유독 말이 많아질 때가 있는데 그건 바로 <u>배가 고플 때</u> 이다. <br>간식줄까? 라고 물어보면 하울링을 하는데 <strong>마침 배고팠으니 얼른 줘라</strong> 라는 의미이다.</p>   
+        </div>
+    </div>    
 </body>
 </html>

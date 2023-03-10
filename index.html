@@ -1,22 +1,36 @@
 <!doctype html>
 <html>
 <head>
-<title>main</title>
-<meta charset="utf-8">
+    <title>main</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 
 <body>
-    <h1>참깨소개서</h1>
-    <ol>
-        <li><a href="index.html">참깨의 습관</a></li>
-        <li><a href="1.html">참깨의 언어</a></li>
-        <li><a href="2.html">참깨 발바닥 관리 방법</a></li>
-    </ol>
-    <h2>참깨의 습관</h2>
-    <h5><a href="https://instagram.com/sesame_200906?igshid=YmMyMTA2M2Y=" target="_blank" title="sesame instagram">참깨인스타 바로가기</a></h5>
-    <img src="sesame.jpg" width="450">
-    <p>아침에 일어난 참깨는 안방 문앞에 와서 우리를 깨운다. <br>그 소리를 듣고 일어나서 나가보면 아침인사를 한 다음 만족스러워하며 다시 자기 집에 들어가서 잠을 잔다.</p>
-    <p>참깨는 <u>닭발</u> 먹는 것을 좋아한다. <br>하지만 <strong>잘게 부숴줘야 먹는다.</strong> <br>닭발을 물어와서 우리앞에 던진 다음 닭발을 자르라고 명령한다.</p>
+    <input type="button" value="night" onclick="
+     nightDayHandler(this);   
+    ">
 
+    <h1>참깨소개서</h1>
+    <div id="grid">
+        <ol>
+            <li><a href="index.html">참깨의 습관</a></li>
+            <li><a href="1.html">참깨의 언어</a></li>
+            <li><a href="2.html">참깨 발바닥 관리 방법</a></li>
+        </ol>
+        <div id="article">
+            <h2>참깨의 습관</h2>
+            <h5><a href="https://instagram.com/sesame_200906?igshid=YmMyMTA2M2Y=" target="_blank" title="sesame instagram">참깨인스타 바로가기</a></h5>
+            <img src="sesame.jpg" width="450">
+            <p>아침에 일어난 참깨는 안방 문앞에 와서 우리를 깨운다. <br>그 소리를 듣고 일어나서 나가보면 아침인사를 한 다음 만족스러워하며 다시 자기 집에 들어가서 잠을 잔다.</p>
+            <p>참깨는 <u>닭발</u> 먹는 것을 좋아한다. <br>하지만 <strong>잘게 부숴줘야 먹는다.</strong> <br>닭발을 물어와서 우리앞에 던진 다음 닭발을 자르라고 명령한다.</p>
+        </div>
+    </div>    
 </body>
 </html>
+
+
+<!-- 코딩을 잘 하는 방법: 중복을 찾아가서 없애라 -->
+<!-- 중복되는 단어들을 한번에 수정할 때 바꾸고 싶은 데 클릭하고 Ctrl shift L -->
